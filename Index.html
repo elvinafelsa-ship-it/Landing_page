@@ -1,266 +1,134 @@
-<!doctype html>
-<html lang="id" data-wa="628974183557">
+<!DOCTYPE html>
+<html lang="id">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Creative Studio — Belajar Bikin Aplikasi Pakai AI</title>
-  <meta name="description" content="Landing page sederhana ala poster Creative Studio: panduan step-by-step bikin aplikasi pakai AI, cocok untuk UMKM, pelajar, hingga IRT." />
-
-  <!-- Tailwind via CDN -->
+  <title>Landing Page Penjualan - Hubungi WA</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif"],
-          },
-          colors: {
-            // ✅ Palet brand blue-navy
-            brand: {
-              50:'#eff6ff', 100:'#dbeafe', 200:'#bfdbfe', 300:'#93c5fd', 400:'#60a5fa', 500:'#3b82f6', 600:'#1d4ed8', 700:'#1e40af', 800:'#1e3a8a', 900:'#172554'
-            }
-          },
-          boxShadow: { soft: '0 8px 30px rgba(2,6,23,.08)' }
-        }
-      }
-    }
-  </script>
-
-  <style>
-    .grid-paper { /* pola kertas kotak */
-      background-image: linear-gradient(to right, rgba(15,23,42,0.08) 1px, transparent 1px),
-                        linear-gradient(to bottom, rgba(15,23,42,0.08) 1px, transparent 1px);
-      background-size: 24px 24px; background-position: top left;
-    }
-    .fade-in { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
-    .fade-in.is-visible { opacity: 1; transform: translateY(0); }
-  </style>
 </head>
-<body class="bg-white text-gray-800 font-sans selection:bg-brand-100">
-  <!-- Header -->
-  <header id="top" class="sticky top-0 z-40 backdrop-blur bg-white/75 border-b border-gray-100">
-    <div class="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between">
-      <a href="#top" class="flex items-center gap-2 font-semibold">
-        <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-brand-800 text-white">AI</span>
-        <span class="tracking-tight">Creative Studio</span>
+<body class="bg-black text-white font-sans">
+  <!-- Navbar -->
+  <nav class="bg-black/80 p-4 fixed top-0 left-0 w-full z-50 backdrop-blur">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="font-bold text-lg">Digital Coding</h1>
+      <a href="https://wa.me/qr/P5L4JH4ARKVWE1" target="_blank" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg text-white font-semibold">
+        Hubungi via WhatsApp
       </a>
-      <nav class="hidden sm:flex items-center gap-6 text-sm">
-        <a href="#benefits" class="hover:text-brand-700">Kenapa</a>
-        <a href="#fitur" class="hover:text-brand-700">Yang Kamu Dapat</a>
-        <a href="#contoh" class="hover:text-brand-700">Contoh</a>
-        <a href="https://lynk.id/lvina/v2wpyjvrgdlm" target="_blank" rel="noopener" class="hover:text-brand-700">Grup</a>
-      </nav>
-      <a href="#daftar" class="hidden sm:inline-flex px-3 py-2 rounded-xl bg-brand-800 text-white text-sm shadow-soft hover:bg-brand-900">Mulai Sekarang</a>
     </div>
-  </header>
+  </nav>
 
-  <!-- Hero -->
-  <section class="mx-auto max-w-5xl px-4 md:px-6 pt-10 md:pt-16 pb-8 md:pb-12">
-    <div class="grid md:grid-cols-2 gap-6 items-center">
-      <div class="fade-in">
-        <p class="text-brand-800 font-semibold text-sm">Creative Studio?</p>
-        <h1 class="text-3xl md:text-4xl font-bold leading-tight mt-2">Teknologi harusnya <span class="text-brand-800">memudahkan hidup</span>, bukan bikin tambah stres.</h1>
-        <p class="text-gray-600 mt-4">Makanya, di sini kamu bakal dapat panduan praktis untuk bikin aplikasi beneran yang bisa langsung kamu pakai — tanpa harus jadi expert dulu.</p>
-        <div class="flex items-center gap-3 mt-6">
-          <a href="#daftar" class="px-4 py-2 rounded-xl bg-brand-800 text-white shadow-soft hover:bg-brand-900">Mulai Gratis</a>
-          <a href="#fitur" class="px-4 py-2 rounded-xl bg-gray-100 hover:bg-gray-200">Lihat Fitur</a>
-        </div>
-        <div class="mt-4 flex items-center gap-2 text-xs text-gray-500">
-          <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-brand-100">✅</span>
-          <span>Tanpa coding rumit • Cocok untuk UMKM & pelajar</span>
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative text-center py-20 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Bikin Aplikasi Lebih Mudah dengan AI</h1>
+        <p class="text-lg md:text-xl text-gray-300 mb-8">
+          Belajar, buat, dan jalankan aplikasi modern hanya dengan sekali klik. Cocok untuk pemula maupun developer yang ingin lebih produktif.
+        </p>
+        <div class="mt-10 flex justify-center">
+          <img src="https://raw.githubusercontent.com/elvinafelsa-ship-it/Landing_page/bdc2f97bc735a3dd741a1a940c4f360b60e0bc3a/file_00000000d96061f891c2f938df90cf5e.png" alt="Hero Gambar" class="rounded-2xl shadow-lg w-full max-w-2xl">
         </div>
       </div>
-      <div class="relative fade-in">
-        <!-- ✅ Gambar dari link GitHub (RAW) -->
-        <img src="https://raw.githubusercontent.com/elvinafelsa-ship-it/Landing_page/02f3e67513ecadb853f08af68e7807a7ff0cd522/file_00000000d96061f891c2f938df90cf5e.png" alt="Ilustrasi kreator bekerja dengan ikon app melayang" class="w-full rounded-3xl border border-brand-200 shadow-soft object-cover aspect-[4/3]" />
-        <span class="absolute -bottom-3 -right-3 text-[10px] px-2 py-1 rounded-lg bg-white border shadow">Blue‑Navy Brand</span>
-      </div>
-      <!-- (Tetap) Tidak ada tombol WA di hero -->
-    </div>
-  </section>
+    </section>
 
-  <!-- Benefit / Copy -->
-  <section id="benefits" class="mx-auto max-w-5xl px-4 md:px-6 pb-4 md:pb-6">
-    <div class="rounded-3xl border border-gray-200 bg-white p-5 md:pb-7 shadow-soft fade-in">
-      <p class="text-gray-700 leading-relaxed">
-        Karena aku percaya, teknologi itu dibuat untuk <span class="font-medium">memudahkan hidup</span> kita. Jadi, semua materi di Creative Studio fokus ke hal yang benar-benar kamu butuhkan — tanpa teori berbelit.
-      </p>
-    </div>
-  </section>
+    <!-- 3 Grid Menu -->
+    <section class="py-16 px-6 bg-gray-900">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">Menu Utama</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Menu 1 -->
+          <div class="bg-gray-800 rounded-xl shadow-lg p-6 text-center hover:scale-105 transform transition">
+            <img src="https://raw.githubusercontent.com/elvinafelsa-ship-it/Landing_page/7de1951acd332a609b54dde1bb5677ffbb83436c/vol1.png" alt="Belajar Coding" class="mx-auto mb-4 rounded-md object-cover h-24 w-24">
+            <h3 class="text-xl font-semibold mb-2">Belajar Coding untuk Pemula Level 1</h3>
+            <p class="text-gray-400 mb-4">Mulai perjalanan coding dari nol dengan panduan praktis dan mudah diikuti.</p>
+            <a href="https://lynk.id/lvina/73oe38vwg11p" target="_blank" class="text-green-400 font-semibold hover:underline">Mulai Sekarang</a>
+          </div>
 
-  <!-- Fitur / Yang didapat -->
-  <section id="fitur" class="mx-auto max-w-5xl px-4 md:px-6 py-6 md:py-8">
-    <div class="relative rounded-3xl border border-gray-200 overflow-hidden shadow-soft grid-paper fade-in">
-      <!-- Penjepit kertas -->
-      <svg class="absolute -top-2 left-4 h-8 w-8 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7v10a5 5 0 0 0 10 0V6a3 3 0 0 0-6 0v10a1 1 0 0 0 2 0V7"/></svg>
+          <!-- Menu 2 -->
+          <div class="bg-gray-800 rounded-xl shadow-lg p-6 text-center hover:scale-105 transform transition">
+            <img src="https://raw.githubusercontent.com/elvinafelsa-ship-it/Landing_page/ce19175f4bb13b78cf0bac9248cb9720afd8ae93/20250905_2211_Bikin%20Aplikasi%20AI_simple_compose_01k4d6v59rfnkavbk0xvfmhah4%20(1).png" alt="AI Project" class="mx-auto mb-4 rounded-md object-cover h-24 w-24">
+            <h3 class="text-xl font-semibold mb-2">AI Project</h3>
+            <p class="text-gray-400 mb-4">Eksperimen dengan project AI yang bisa langsung kamu coba + Grup Support biar belajar gak sendirian.</p>
+            <a href="https://lynk.id/lvina/v2wpyjvrgdlm" target="_blank" class="text-green-400 font-semibold hover:underline">Mulai dari Sekarang</a>
+          </div>
 
-      <div class="p-5 md:p-8">
-        <h2 class="text-lg md:text-xl font-semibold mb-2">Panduan step by step bikin aplikasi pakai AI</h2>
-        <ul class="space-y-3 text-gray-700">
-          <li class="flex items-start gap-3"><span>✨</span>
-            <span>Proyek nyata yang langsung bisa dipraktikkan (cocok buat UMKM, pelajar, sampai IRT)</span>
-          </li>
-          <li class="flex items-start gap-3"><span>✨</span>
-            <span>Tips desain & digital biar aplikasi kamu nggak cuma berfungsi tapi juga keliatan keren</span>
-          </li>
-          <li class="flex items-start gap-3"><span>✨</span>
-            <span>Komunitas support biar nggak belajar sendirian</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contoh yang bisa dibuat -->
-  <section id="contoh" class="mx-auto max-w-5xl px-4 md:px-6 pb-10 md:pb-16">
-    <div class="grid md:grid-cols-2 gap-6 items-center">
-      <div class="space-y-3 fade-in">
-        <h3 class="text-xl font-semibold">Bayangin, kamu bisa bikin:</h3>
-        <ul class="text-gray-800 space-y-2">
-          <li>📱 <span class="font-medium">Aplikasi kasir</span> buat usaha kecilmu</li>
-          <li>📦 <span class="font-medium">Aplikasi katalog produk</span> biar jualan makin rapi</li>
-          <li>📊 <span class="font-medium">Dashboard sederhana</span> buat analisa data</li>
-        </ul>
-        <p class="font-medium mt-4">Dan itu semua bisa kamu mulai <u>hari ini</u>, tanpa harus jadi expert.</p>
-        <div class="pt-2">
-          <a href="#daftar" class="inline-flex px-4 py-2 rounded-xl bg-brand-800 text-white shadow-soft hover:bg-brand-900">Gabung Sekarang</a>
+          <!-- Menu 3 -->
+          <div class="bg-gray-800 rounded-xl shadow-lg p-6 text-center hover:scale-105 transform transition">
+            <img src="https://raw.githubusercontent.com/elvinafelsa-ship-it/Landing_page/3dac108f7374c2536e51e2c9037be680d84b5cbb/kasir.png" alt="Produk Digital" class="mx-auto mb-4 rounded-md object-cover h-24 w-24">
+            <h3 class="text-xl font-semibold mb-2">Produk Digital</h3>
+            <p class="text-gray-400 mb-4">Dapatkan produk digital siap pakai untuk menunjang usaha online kamu.</p>
+            <a href="https://wa.me/qr/P5L4JH4ARKVWE1" target="_blank" class="text-green-400 font-semibold hover:underline">Cek Sekarang</a>
+          </div>
         </div>
       </div>
-      <div class="fade-in">
-        <div class="rounded-3xl border border-gray-200 p-4 md:p-6 shadow-soft">
-          <div class="grid sm:grid-cols-3 gap-3 text-sm">
-            <div class="rounded-2xl bg-brand-50 p-4 border border-brand-100 text-center">
-              <div class="text-3xl">⚡</div>
-              <div class="mt-1 font-medium">Cepat</div>
-              <div class="text-gray-600">Mulai tanpa ribet</div>
+    </section>
+
+    <!-- Project Tambahan -->
+    <section class="py-16 px-6 bg-black">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">Project Tambahan</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div class="bg-white text-gray-900 rounded-xl shadow-lg overflow-hidden">
+            <img src="https://raw.githubusercontent.com/elvinafelsa-ship-it/Landing_page/ce19175f4bb13b78cf0bac9248cb9720afd8ae93/20250905_2211_Bikin%20Aplikasi%20AI_simple_compose_01k4d6v59rfnkavbk0xvfmhah4%20(1).png" alt="Project Tambahan" class="w-full h-56 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Project AI Tambahan</h3>
+              <p class="text-gray-600 mb-4">Contoh project sederhana untuk belajar membangun aplikasi dengan bantuan AI.</p>
+              <a href="https://lynk.id/lvina/n5ydq9e3ewlk" class="text-blue-600 font-semibold hover:underline">Akses Grup Disini</a>
             </div>
-            <div class="rounded-2xl bg-brand-50 p-4 border border-brand-100 text-center">
-              <div class="text-3xl">🎯</div>
-              <div class="mt-1 font-medium">Praktis</div>
-              <div class="text-gray-600">Langsung dipakai</div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="bg-white text-gray-900 rounded-xl shadow-lg overflow-hidden">
+            <img src="https://raw.githubusercontent.com/elvinafelsa-ship-it/Landing_page/3dac108f7374c2536e51e2c9037be680d84b5cbb/app_harga_ual.png" alt="Penjualan Online" class="w-full h-56 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Penjualan Online</h3>
+              <p class="text-gray-600 mb-4">Template aplikasi penjualan online yang siap dipakai untuk toko kamu.</p>
+              <a href="https://lynk.id/lvina/n5ydq9e3ewlk" target="_blank" class="text-blue-600 font-semibold hover:underline">Coba Demonya Sekarang</a>
             </div>
-            <div class="rounded-2xl bg-brand-50 p-4 border border-brand-100 text-center">
-              <div class="text-3xl">🤝</div>
-              <div class="mt-1 font-medium">Support</div>
-              <div class="text-gray-600">Belajar bareng</div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="bg-white text-gray-900 rounded-xl shadow-lg overflow-hidden">
+            <img src="https://raw.githubusercontent.com/elvinafelsa-ship-it/Landing_page/3dac108f7374c2536e51e2c9037be680d84b5cbb/kasir.png" alt="Kasir" class="w-full h-56 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Aplikasi Kasir</h3>
+              <p class="text-gray-600 mb-4">Sistem kasir sederhana dan efisien untuk UMKM.</p>
+              <a href="https://lynk.id/lvina/01k40o9g31pl" target="_blank" class="text-blue-600 font-semibold hover:underline">Coba Demonya Sekarang</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA / Form -->
-  <section id="daftar" class="bg-gray-50 border-y">
-    <div class="mx-auto max-w-5xl px-4 md:px-6 py-10 md:py-14 grid md:grid-cols-2 gap-8 items-center">
-      <div class="fade-in">
-        <h3 class="text-2xl font-bold">Mulai hari ini, isi nama kamu.</h3>
-        <p class="text-gray-600 mt-2">Setelah itu, klik tombol WhatsApp di bawah untuk langsung terhubung dan terima akses info.</p>
-      </div>
-      <form id="leadForm" class="fade-in grid grid-cols-1 gap-3">
-        <input name="nama" type="text" placeholder="Nama" class="rounded-xl border-gray-300 focus:border-brand-700 focus:ring-brand-700" required />
-        <button class="px-4 py-2 rounded-xl bg-brand-800 text-white shadow-soft hover:bg-brand-900" type="submit">Simpan</button>
-        <p id="msg" class="text-xs text-gray-500"></p>
-      </form>
-      <!-- CTA WhatsApp di section daftar -->
-      
-        <a href="https://lynk.id/lvina/v2wpyjvrgdlm" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-brand-800 text-white shadow-soft hover:bg-brand-900">
-          <span>🔗</span>
-          <span>Gabung Access Grup</span>
-        </a>
-        <span class="text-[11px] text-gray-500 text-center">Dengan menekan tombol ini, kamu akan diarahkan ke WhatsApp dengan pesan otomatis.</span>
-      </div>
+    <!-- Form Chat WhatsApp -->
+    <div class="bg-gray-800 p-4 rounded-xl max-w-md mx-auto text-center mt-10">
+      <h2 class="text-xl font-bold mb-3">Hubungi via WhatsApp</h2>
+      <input id="waName" type="text" placeholder="Masukkan nama kamu..."
+             class="w-full mb-3 px-3 py-2 rounded-lg text-black" />
+      <button onclick="sendWA()" 
+              class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded-lg">
+        Chat Sekarang
+      </button>
     </div>
-  </section>
-
-  <footer class="py-8 text-center text-xs text-gray-500">
-    made with <span class="font-semibold">Tailwind</span> · © <span id="y"></span> Creative Studio
-    <div class="mt-3 text-[11px] text-gray-500 flex items-center justify-center gap-2">
-      <span>URL Netlify:</span>
-      <a id="netlifyLink" href="#" target="_blank" rel="noopener" class="underline decoration-dotted break-all max-w-[60ch] truncate">belum diset</a>
-      <button id="btnSetNetlify" class="ml-2 px-2 py-1 rounded-lg border bg-white hover:bg-gray-50">Set URL</button>
-    </div>
-  </footer>
+  </main>
 
   <script>
-    // Fade-in on scroll
-    const io = new IntersectionObserver((entries) => { entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('is-visible'); }); }, { threshold: 0.08 });
-    document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
-
-    // Handler form sederhana (hanya nama)
-    const form = document.getElementById('leadForm');
-    const msg = document.getElementById('msg');
-    form?.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const data = new FormData(form);
-      const nama = data.get('nama');
-      localStorage.setItem('lead_name', (nama || '').toString());
-      msg.textContent = `Terima kasih, ${nama}! Sekarang klik tombol WhatsApp di bawah.`;
-      form.reset();
-    });
-
-    // Tahun
-    document.getElementById('y').textContent = new Date().getFullYear();
-
-    // ===== WhatsApp Click-to-Chat =====
-    // Nomor akan diambil dari URL (?wa=62xxxxxxxxxx) > atribut <html data-wa> > localStorage('owner_wa') > fallback placeholder
-    function getOwnerWA() {
-      const qs = new URLSearchParams(location.search).get('wa');
-      if (qs) return qs.replace(/\D/g,'');
-      const attr = document.documentElement.getAttribute('data-wa');
-      if (attr) return attr.replace(/\D/g,'');
-      const stored = localStorage.getItem('owner_wa');
-      if (stored) return stored.replace(/\D/g,'');
-      return '628974183557';
+    function sendWA() {
+      const name = document.getElementById('waName').value.trim();
+      if (!name) { alert("Tolong isi nama dulu 😊"); return; }
+      const msg = `Halo, saya ${name} - mau tanya nih`;
+      window.open("https://wa.me/628974183557?text=" + encodeURIComponent(msg), "_blank");
     }
-
-    // Opsional: admin bisa set sementara via prompt (tekan Alt+W)
-    window.addEventListener('keydown', (e) => {
-      if ((e.altKey || e.metaKey) && e.key.toLowerCase() === 'w') {
-        const val = prompt('Masukkan nomor WhatsApp Anda (format internasional, mis. 62812xxxx):', getOwnerWA());
-        if (val) { localStorage.setItem('owner_wa', val.replace(/\D/g,'')); alert('Nomor tersimpan. Refresh halaman.'); }
-      }
-    });
-
-    const WA_MESSAGE = 'Halo! Aku mau akses info Creative Studio. Tolong kirimkan ya 🙂';
-
-    function openWhatsApp() {
-      const number = getOwnerWA();
-      const name = localStorage.getItem('lead_name') || '';
-      const text = name ? `${WA_MESSAGE}\n\nNama: ${name}` : WA_MESSAGE;
-      const url = `https://wa.me/${number}?text=${encodeURIComponent(text)}`;
-      window.open(url, '_blank', 'noopener');
-    }
-    document.getElementById('btnWACTA')?.addEventListener('click', openWhatsApp);
-    // ===== Netlify URL binding =====
-    // Ambil dari: ?site=https://... > localStorage('netlify_url') > default
-    const DEFAULT_NETLIFY_URL = 'https://your-site-name.netlify.app';
-    const netlifyLink = document.getElementById('netlifyLink');
-    const btnSetNetlify = document.getElementById('btnSetNetlify');
-
-    function getNetlifyURL() {
-      const qs = new URLSearchParams(location.search).get('site');
-      if (qs) return qs;
-      return localStorage.getItem('netlify_url') || DEFAULT_NETLIFY_URL;
-    }
-    function applyNetlifyURL(u) {
-      if (!netlifyLink) return;
-      netlifyLink.href = u;
-      netlifyLink.textContent = u;
-    }
-    function setNetlifyURL(u) {
-      if (!u) return;
-      localStorage.setItem('netlify_url', u);
-      applyNetlifyURL(u);
-    }
-    applyNetlifyURL(getNetlifyURL());
-
-    btnSetNetlify?.addEventListener('click', () => {
-      const current = getNetlifyURL();
-      const u = prompt('Tempel URL Netlify kamu (contoh: https://namasitus.netlify.app):', current);
-      if (u) setNetlifyURL(u);
-    });
   </script>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/qr/P5L4JH4ARKVWE1" target="_blank" class="fixed right-6 bottom-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center z-50">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.95 11.95 0 0012 .5 11.95 11.95 0 003.48 3.52 11.98 11.98 0 000 12c0 2.11.55 4.09 1.6 5.86L0 24l6.42-1.64A11.96 11.96 0 0012 24c6.63 0 12-5.37 12-12a11.96 11.96 0 00-3.48-8.52z"/><path d="M17.3 14.2c-.3-.15-1.77-.86-2.05-.96-.28-.1-.48-.15-.68.15-.2.3-.78.96-.95 1.16-.17.2-.34.22-.63.07-.3-.15-1.27-.47-2.42-1.48-.9-.78-1.5-1.75-1.67-2.05-.17-.3-.02-.46.13-.61.13-.12.3-.32.45-.48.15-.15.2-.25.3-.42.1-.17.05-.32-.02-.47-.07-.15-.68-1.64-.93-2.24-.24-.58-.48-.5-.68-.52l-.58-.01c-.2 0-.47.07-.72.32-.25.25-.97.95-.97 2.32 0 1.37.99 2.7 1.12 2.88.13.17 1.94 3.01 4.7 4.11 2.77 1.1 2.77.73 3.27.69.5-.04 1.64-.66 1.87-1.3.23-.63.23-1.17.16-1.29-.07-.12-.27-.19-.57-.34z"/></svg>
+  </a>
+
+  <footer class="bg-gray-900 text-center py-6">
+    <p class="text-gray-400">&copy;2025 vina creative design.</p>
+  </footer>
 </body>
 </html>
